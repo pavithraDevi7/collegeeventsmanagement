@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>gasc</title>
+  
+  <!-- Bootstrap CSS from CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" />
+  
+  <style>
+    body, html {
+      height: 100%;
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+    body {
+      /* Set your image as full background */
+      background: url('clg1.png') no-repeat center center fixed;
+      background-size: cover;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      text-align: center;
+      min-height: 100vh;
+      padding: 40px 15px 60px 15px;
+    }
+    /* Simple fade-in animation for header and button */
+    .fade-in {
+      animation: fadeIn 2.5s ease forwards;
+      opacity: 0;
+    }
+    .fade-in.delay-1 {
+      animation-delay: 0.8s;
+    }
+    .fade-in.delay-2 {
+      animation-delay: 1.6s;
+    }
+    @keyframes fadeIn {
+      to { opacity: 1; }
+    }
+    h1 {
+      font-weight: 700;
+      font-size: 3rem;
+      text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+      margin-bottom: 30px;
+    }
+    .btn-custom {
+      font-size: 1.3rem;
+      padding: 12px 36px;
+      border-radius: 30px;
+      background-color: #007bff;
+      border: none;
+      box-shadow: 0 4px 12px rgba(0, 123, 255, 0.7);
+      transition: background-color 0.3s ease;
+      margin-bottom: 40px;
+    }
+    .btn-custom:hover {
+      background-color: #0056b3;
+    }
+    /* Container for Vision and Mission */
+    .content-section {
+      max-width: 650px;
+      background: rgba(0,0,0,0.5);
+      padding: 30px 25px;
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.6);
+      margin-bottom: 20px;
+    }
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 15px;
+      text-shadow: 1px 1px 5px rgba(0,0,0,0.8);
+    }
+    p {
+      font-size: 1.1rem;
+      line-height: 1.5;
+      color: #ddd;
+      text-shadow: 0 0 4px rgba(0,0,0,0.7);
+    }
+  </style>
+</head>
+<body>
+  
+  <h1 class="fade-in">Welcome To Gobi Arts & Science College</h1>
+  
+  <a href="page1.php">
+    <button class="btn btn-custom fade-in delay-1">Register</button>
+  </a>
+  
+  <!-- Vision Section -->
+  <section class="content-section fade-in delay-2" aria-label="Vision of the college">
+    <h2>Vision</h2>
+    <p>
+      "Social and economic upliftment of the people of this area through value based quality education"
+    </p>
+  </section>
+  
+  <!-- Mission Section -->
+  <section class="content-section fade-in delay-2" aria-label="Mission of the college">
+    <h2>Mission</h2>
+    <p>
+      "Committed to serve the society with humility and trust, devoid of exploitation; to impart value based higher education,
+      particularly to the socially and economically deprived sections of this area; to make the students of this institution worthy citizens of our glorious motherland"
+    </p>
+  </section>
+
+  <!-- Bootstrap JS Bundle from CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
